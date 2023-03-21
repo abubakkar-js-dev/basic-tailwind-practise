@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* group utilities */
+
+/* .btn-primary{
+    @apply px-4 py-1 border border-purple-200 rounded-full text-sm text-purple-600 dark:text-purple-400 text-semibold hover:text-white dark:hover:text-purple-100 hover:bg-purple-600 duration-500 hover:border-transparent focus:outline-none focus:ring-1 focus:ring-purple-400 focus:ring-offset-1;
+} */
+
+@layer components{
+    .btn{
+        @apply px-4 py-1 border rounded-full text-sm font-semibold duration-500;
+    }
+    .btn-purple{
+        @apply border-purple-200 text-purple-600
+        dark:text-purple-400;
+    }
+    .btn-purple:hover{
+        @apply hover:text-white hover:bg-purple-600 hover:border-transparent dark:hover:text-purple-100;
+    }
+   .btn-purple:focus{
+       @apply focus:outline-none
+       focus:ring-1 focus:ring-purple-400
+       focus:ring-offset-1;
+   }
+   
+}
