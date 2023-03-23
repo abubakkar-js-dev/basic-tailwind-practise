@@ -27,3 +27,8 @@
    }
    
 }
+@layer utilities{
+    .bg-black{
+        @apply bg-purple-400;
+    }
+}
